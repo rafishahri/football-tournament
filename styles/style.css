@@ -5,6 +5,7 @@
     background-position-x: center;
     background-repeat: repeat 3 3;
     background-color: rgb(245, 230, 230);
+    margin-bottom: 30px;
 }
 /* heading-font-style */
 .heading-first{
@@ -21,7 +22,7 @@
     text-decoration: none;
     background-image: linear-gradient(orange,tomato);
     padding: 10px 40px;
-    margin: 0 10px;
+    margin: 5px 10px;
     color: white;
     font-weight: 700;
     border-radius: 5px;
@@ -36,12 +37,17 @@
     color: springgreen;
 
 }
+.link-button:after {
+    content:'\f063';
+    font-family: FontAwesome;
+    padding-left: 10px;
+}
 /* login-button-style */
 .login-button{
     text-decoration: none;
     background-image: linear-gradient(purple,tomato);
     padding: 10px 70px;
-    margin: 0 10px;
+    margin: 5px 10px;
     display: inline-block;
     color: white;
     font-weight: 700;
@@ -67,3 +73,103 @@
     block-size: 500px;
     padding-right: 5%;
 }
+.neymar{
+    height: 30%;
+    width: 33%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 30px;
+    border-radius: 10px;
+}
+.neymar img{
+    height: 250px;
+    width: 150%;
+}
+.top-players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.container{
+    background-color: bisque;
+}
+.highlights{
+    display: flex;
+    margin-left: 5px;
+    padding-left: 5px;
+    margin-right: 2px;
+    background-color: rgb(184, 238, 238);
+}
+.highlights img{
+    height: 300px;
+    width: 300px;
+    padding-left: 5%;
+    margin-bottom: 150px;
+    margin-left: 200px;
+}
+.last-button{
+    text-decoration: none;
+    background-image: linear-gradient(purple,tomato);
+    padding: 10px 70px;
+    margin: 5px 10px;
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 5px;
+
+}
+.last-button:hover {
+    border-radius: 50px;
+    background: rgb(37, 240, 71);
+    color: black;
+
+}
+.last-button:after {
+    content:'\f063';
+    font-family: FontAwesome;
+    padding-left: 10px;
+}
+.icon-tag{
+    text-align: center;
+    background-color: darkseagreen;
+}
+.logo{
+    text-align: center;
+}
+.twitter-icon{
+    text-align: center;
+}
+.twitter-icon:after {
+    content: '\f099' '\f16d' '\f09a' '\f2c6';
+    font-family: FontAwesome;
+    padding: left 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.icon-tag:after {
+    content: '\f1f9';
+    font-family: FontAwesome;
+    padding: left 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.last-foot{
+    text-align: center;
+}
+/* for mobile phones */
+@media (max-width:688px) {
+    .top-players{
+        background-color: rgb(236, 84, 84);
+    }
+}
+    
+}
+@media (min-width: 900px) {
+    .top-players{
+        background-color: greenyellow;
+    }
+}
+
+
